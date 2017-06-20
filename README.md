@@ -41,7 +41,7 @@ Then check out yyy.jpg.
 cd <THIS REPO>
 python3 train.py --style_image <STYLE IMAGE> --naming <NAMING> --model_path <MODEL PATH> --loss_model_file <YOUR PATH TO vgg_16.ckpt> --data_set <YOUR IMAGE_SET>
 ```
-Then copy the \<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done as new style model
+Then copy **\<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done** as new style model
 
 ### Required Arguments
 ```
