@@ -1,6 +1,6 @@
 # image_style_tf_py3
 
-This code is based on [fast-neural-style-tensorflow](https://github.com/hzy46/fast-neural-style-tensorflow)
+This code is based on [fast-neural-style-tensorflow](https://github.com/hzy46/fast-neural-style-tensorflow), and it is implementation of [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155)
 
 ## Requirements
 
