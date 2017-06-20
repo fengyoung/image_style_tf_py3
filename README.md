@@ -45,12 +45,11 @@ Then copy the \<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done as
 
 ### Required Arguments
 
-- -h, --help
+```
+-h, --help
+  Show help message and exit
+--style_image STYLE_IMAGE
+  Target style image used
+```
 
-Show help message and exit
-
-- --style_image STYLE_IMAGE
-
-Target style image used
-  
 ### Optional Arguments
