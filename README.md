@@ -2,7 +2,7 @@
 
 This code is based on [fast-neural-style-tensorflow](https://github.com/hzy46/fast-neural-style-tensorflow)
 
-## Requirements and Prerequisites
+## Requirements
 
 - python 3.x
 - tensorflow >= 1.0
@@ -15,11 +15,12 @@ See [Installing TensorFlow](https://www.tensorflow.org/install/) for instruction
 
 **2. Clone the source of image_style_tf_py3**
 
-git clone https://github.com/fengyoung/image_style_tf_py3.git <your_path>
+git clone https://github.com/fengyoung/image_style_tf_py3.git <your source path>
 
 ## How to Use Trained Model to Stylize an Image
 
-
+1. Download [trained models](http://pan.baidu.com/s/1kURjpLd) to <your model path>. The files with suffix ".ckpt-done" are models and  ".jpg" files are corresponding style images
+2. faog
 
 
 
