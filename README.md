@@ -74,7 +74,7 @@ Then copy the \<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done as
 --epoch EPOCH
   Epoch times of whole data set. Default is 2.
 --loss_model LOSS_MODEL
-  Name of loss model. \"vgg_16\" as default.
+  Name of loss model. "vgg_16" as default.
 --content_layers CONTENT_LAYERS
   Use these layers for content loss. They are splitted by ",".
   As default, layer "vgg_16/conv3/conv3_3" is used.
