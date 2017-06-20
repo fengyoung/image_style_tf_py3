@@ -39,9 +39,15 @@ Then check out yyy.jpg.
 3. Prepare a style image and train the style model by using **train.py**
 ```
 cd <THIS REPO>
-python3 train.py --style_image <STYLE IMAGE FILE> --naming <NAME OF THE MODEL> --model_path <MODEL PATH> --loss_model_file <YOUR PATH TO vgg_16.ckpt> --data_set <PATH TO YOUR IMAGE-SET>
+python3 train.py --style_image <STYLE IMAGE> --naming <NAME OF THE MODEL> --model_path <MODEL PATH> --loss_model_file <YOUR PATH TO vgg_16.ckpt> --data_set <PATH TO YOUR IMAGE-SET>
 ```
-Then copy the \<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done 
+Then copy the \<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done as new style model
 
+### Required Arguments
 
-
+-h, --help
+  Show help message and exit
+--style_image STYLE_IMAGE
+  Target style image used
+  
+### Optional Arguments
