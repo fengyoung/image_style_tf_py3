@@ -2,35 +2,35 @@
 
 This code is based on [fast-neural-style-tensorflow](https://github.com/hzy46/fast-neural-style-tensorflow), and it is implementation of [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155)
 
-## Requirements
+## 1. Requirements
 
 - python 3.x
 - tensorflow >= 1.0
 
-## Installation
+## 2. Installation
 
-**1. Install TensorFlow**
+**(1) Install TensorFlow**
 
 See [Installing TensorFlow](https://www.tensorflow.org/install/) for instructions on how to install the release binaries or how to build from source.
 
-**2. Clone the source of image_style_tf_py3**
+**(2) Clone the source of image_style_tf_py3**
 
 ```
 git clone https://github.com/fengyoung/image_style_tf_py3.git <YOUR REPO PATH>
 ```
 
-## How to Use Trained Model to Stylize an Image
+## 3. How to Use Trained Model to Stylize an Image
 
-1. Download [trained models](http://pan.baidu.com/s/1kURjpLd) first. The files with suffix ".ckpt-done" are models and  ".jpg" files are corresponding style images
+(1) Download [trained models](http://pan.baidu.com/s/1kURjpLd) first. The files with suffix ".ckpt-done" are models and  ".jpg" files are corresponding style images
 
-2. Stylize your image by using **eval.py**
+(2) Stylize your image by using **eval.py**
 ```
 cd <THIS REPO>
 python3 eval.py --image_file xxx.jpg --model_file <MODEL PATH>/xxxx.ckpt-done --output_file yyy.jpg
 ```
 Then check out yyy.jpg.
 
-## How to Train a New Model
+## 4. How to Train a New Model
 
 1. To train new models, you should first download VGG16 model from [Tensorflow Slim](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) or from my [Baidu Drive](http://pan.baidu.com/s/1eRDMtsY). Extract the file vgg_16.ckpt
 
@@ -43,7 +43,7 @@ python3 train.py --style_image <STYLE IMAGE> --naming <NAMING> --model_path <MOD
 ```
 Then copy **\<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done** as new style model
 
-### Required Arguments
+### 4.1 Required Arguments
 ```
 --style_image STYLE_IMAGE
   Target style image which is used for training model
@@ -57,7 +57,7 @@ Then copy **\<MODEL PATH\>/\<NAME OF THE MODEL\>/fast-style-model.ckpt-done** as
   Path of image data set such as COCO data set
 ```
 
-### Optional Arguments
+### 4.2 Optional Arguments
 ```
 -h, --help
   Show help message and exit
