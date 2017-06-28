@@ -23,7 +23,7 @@ git clone https://github.com/fengyoung/image_style_tf_py3.git <YOUR REPO PATH>
 
 (1) Download [trained models](http://pan.baidu.com/s/1kURjpLd) first. The files with suffix ".ckpt-done" are models and  ".jpg" files are corresponding style images
 
-(2) Stylize your image by using **eval.py**
+(2) Stylize your image by using ***eval.py***
 ```
 cd <THIS REPO>
 python3 eval.py --image_file xxx.jpg --model_file <MODEL PATH>/xxxx.ckpt-done --output_file yyy.jpg
@@ -36,7 +36,7 @@ Then check out yyy.jpg.
 
 2. Collect a image-set contains large number of ".jpg" files or download [COCO dataset](http://pan.baidu.com/s/1c2thNGG)
 
-3. Prepare a style image and train the style model by using **train.py**
+3. Prepare a style image and train the style model by using ***train.py***
 ```
 cd <THIS REPO>
 python3 train.py --style_image <STYLE IMAGE> --naming <NAMING> --model_path <MODEL PATH> --loss_model_file <YOUR PATH TO vgg_16.ckpt> --data_set <YOUR IMAGE_SET>
